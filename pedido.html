@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenidos a la pasteleria</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="index.html">contacto</a></li>
+            </ul>
+    
+        </nav>
+        <section class="formulario">
+            <center><h2>Formulario Para pedido</h2></center>
+            <label for="name">Nombre Completo</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="telefono">Numero de telefono</label>
+            <input type="text" name="telefono" id="telefono">
+            <br><br>
+            <label for="correo">E-mail</label>
+            <input type="email" name="correo" id="correo">
+            <br><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10">Descripcion del pastel</textarea>
+            <center><h2>Seleccion de sabores y adornos</h2></center>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad" max="5" min="0">
+            <br><br>
+            <label for="tipo">Tipo de pastel</label>
+            <select name="tipo" id="tipo">
+                    <option value="chocolate">Pastel de chocolate</option>   
+                    <option value="vainilla">Pastel de Vainilla</option> 
+                    <option value="frutas">Pastel de Frutas</option>   
+                    <option value="manzana">Pastel de Manzanas</option>
+                    <option value="premium">Pastel premium</option>
+            </select>
+            <p>selecciona Decoracion</p>
+               <label for="sabor1">muñeco</label>
+               <input type="checkbox" name="sabor1" id="sabor1" value="juguete">
+        
+               <label for="sabor2">numeros juguete</label>
+               <input type="checkbox" name="sabor2" id="sabor2" value="numerojuguete">
+        
+               <label for="sabor3">varios juguetes</label>
+               <input type="checkbox" name="sabor3" id="sabor3" value="morejuguete">
+                <br> <br> <br>
+               <a href="pago.js"><input type="submit" value="enviar"></a>
+    
+        
+        </section>
+    
+   
+    </div>
+    <footer>Pasteleria riko</footer>
+    </body>
